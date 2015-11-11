@@ -1,0 +1,22 @@
+Package: halcyon
+Type: Package
+Title: Compare metagenomic queries
+Version: 0.1
+Authors@R: c(
+    person("Sean", "Kross", , "sean@seankross.com", c("aut", "cre")),
+    person("Lee", "Mendelowitz", role = "ctb"),
+    person("Mihai", "Pop", role = "ctb")
+    )
+URL: https://github.com/seankross/halcyon
+Description: An R package for comparing BLAST results from high-accuracy-low-coverage
+  and low-accuracy-high-coverage metagenomic databases.
+Depends:
+    R (>= 3.1.2)
+Imports:
+    dplyr,
+    shiny,
+    ggvis
+License: Artistic-2.0
+Suggests:
+    knitr
+VignetteBuilder: knitr
