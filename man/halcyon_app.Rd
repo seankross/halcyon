@@ -7,6 +7,11 @@
 halcyon_app(outfmt10, ocf = function(x) {     as.numeric(quantile(x)[4]) * 1.5
   })
 }
+\arguments{
+\item{outfmt10}{A data frame imported with \code{read_outfmt10}.}
+
+\item{ocf}{Outlier calculation function}
+}
 \description{
 Halcyon App
 }

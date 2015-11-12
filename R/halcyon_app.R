@@ -1,8 +1,10 @@
 #' Halcyon App
 #'
+#' @param outfmt10 A data frame imported with \code{read_outfmt10}.
+#' @param ocf Outlier calculation function
 #' @importFrom dplyr group_by summarise
-#' @importFrom shiny shinyApp headerPanel sidebarPanel sliderInput mainPanel uiOutput pageWithSidebar reactive
-#' @importFrom ggvis ggvis layer_lines layer_points ggvisOutput bind_shiny
+#' @importFrom shiny shinyApp headerPanel sidebarPanel sliderInput mainPanel uiOutput pageWithSidebar reactive withProgress incProgress
+#' @importFrom ggvis ggvis layer_lines layer_points ggvisOutput bind_shiny add_axis
 #' @export
 halcyon_app <- function(outfmt10, ocf = function(x){as.numeric(quantile(x)[4])*1.5}){
   check_outfmt10(outfmt10)

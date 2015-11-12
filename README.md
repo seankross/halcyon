@@ -15,6 +15,7 @@ install_github("seankross/halcyon")
 
 ```r
 library(halcyon)
+library(magrittr)
 read_outfmt10(system.file("data-raw", "silva_blast_result.csv",  package="halcyon")) %>%
 	calc_m_scores() %>%
 	halcyon_app()

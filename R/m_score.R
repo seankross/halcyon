@@ -19,6 +19,7 @@ m_score <- function(x){
 
 #' Calculate m-scores for a blast result
 #'
+#' @param outfmt10 A data frame imported with \code{read_outfmt10}.
 #' @importFrom dplyr group_by summarise left_join mutate
 #' @export
 calc_m_scores <- function(outfmt10){

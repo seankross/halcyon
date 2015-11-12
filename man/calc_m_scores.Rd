@@ -6,6 +6,9 @@
 \usage{
 calc_m_scores(outfmt10)
 }
+\arguments{
+\item{outfmt10}{A data frame imported with \code{read_outfmt10}.}
+}
 \description{
 Calculate m-scores for a blast result
 }
